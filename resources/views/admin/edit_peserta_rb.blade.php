@@ -25,7 +25,7 @@
                 <tr>
                     <td align="right" style="padding: 2px"><h4>Kategori</h4></td>
                     <td class="col-md-10" style="padding: 2px">
-                        <select name="kategori" class="form-control" readonly>
+                        <select name="kategori" class="form-control">
                             <option value=""></option>
                             <option value="Men Youth" <?= $key->kategori == 'Men Youth' ? 'selected' : '' ?>>Men Youth (13 - 16 Thn)</option>
                             <option value="Men Junior" <?= $key->kategori == 'Men Junior' ? 'selected' : '' ?>>Men Junior (17 - 18 Thn)</option>

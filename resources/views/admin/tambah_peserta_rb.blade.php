@@ -30,7 +30,7 @@
                 <tr>
                 <td align="right" class="col-md-4" style="padding: 2px"><h4>Kategori</h4></td>
                 <td class="col-md-10" style="padding: 2px">
-                    <select name="kategori" class="form-control" required readonly>
+                    <select name="kategori" class="form-control" required>
                         <option value="Men Youth" <?= Request::segment(3) == '1' ? 'selected' : '' ?>>Men Youth (13 - 16 Thn)</option>
                         <option value="Men Junior" <?= Request::segment(3) == '2' ? 'selected' : '' ?>>Men Junior (17 - 18 Thn)</option>
                         <option value="Men Elite" <?= Request::segment(3) == '3' ? 'selected' : '' ?>>Men Elite (19 - 29 Thn)</option>
