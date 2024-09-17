@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\rb;
 use App\Models\mtb;
-use App\Models\user;
+use App\Models\User;
 use Session;
 use Alert;
 
@@ -155,7 +155,7 @@ class homeController extends Controller
     public function login_aksi(Request $request)
     {
         $cek = array('username'=>$request->input('username'),'password'=>sha1($request->input('password')));
-        $cek_hasil = user::where($cek)->count();
+        $cek_hasil = User::where($cek)->count();
         if($cek_hasil == null){
             Session::flush();
             Alert::error('ops!',"Username Atau Password Anda Salah");
